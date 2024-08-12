@@ -43,7 +43,7 @@ export const PageNotFound = () => {
                     my-4
                 '>
                     <Link to="/">
-                        <Button>Back To Cinemate</Button>
+                        <Button>Back To CinemaNest</Button>
                     </Link>
                 </div>
             </section>
