@@ -16,8 +16,9 @@ export const MovieDetail = () => {
             setMovie(json);         
         }
         fetchMovie();
-    }, []);
+    }, [params.id]);
 
+    // eslint-disable-next-line
     const pageTitle = useTitle(movie.title);    
 
     return (
