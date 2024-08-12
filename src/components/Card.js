@@ -4,7 +4,7 @@ import backUpImage from '../assets/images/backup.png';
 
 export const Card = ({ movie }) => {
 
-  const {id, original_title, overview, poster_path} = movie;
+  const {id, title, overview, poster_path} = movie;
   const imageUrl = poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : backUpImage;
 
   return (
@@ -14,7 +14,7 @@ export const Card = ({ movie }) => {
       </Link>
       <div className="p-5">
         <Link to={`/movie/${id}`}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{original_title}</h5>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
         </Link>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">{overview}</p> 
       </div>
